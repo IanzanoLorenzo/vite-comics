@@ -95,6 +95,7 @@ export default {
         }
         ul{
             margin: 1rem 0 0 0;
+            width: 150px;
         }
         li{
             color: gray;
@@ -105,14 +106,11 @@ export default {
         .container{
             background-image: url('../assets/img/dc-logo-bg.png');
             background-size: 32rem;
-            height: 100%;
             background-repeat: no-repeat;
             background-position: right;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            align-items: flex-start;
-            justify-content: flex-start;
             max-height: 500px;
             padding: 2rem 0;
         }
