@@ -95,7 +95,7 @@ export default {
         }
         ul{
             margin: 1rem 0 0 0;
-            width: 150px;
+            width: 200px;
         }
         li{
             color: gray;
@@ -111,7 +111,9 @@ export default {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            max-height: 500px;
+            max-height: 430px;
+            justify-items: center;
+            align-content: flex-start;
             padding: 2rem 0;
         }
 
