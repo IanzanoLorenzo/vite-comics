@@ -104,7 +104,7 @@ export default {
         }
         .container{
             background-image: url('../assets/img/dc-logo-bg.png');
-            background-size: 50%;
+            background-size: 32rem;
             height: 100%;
             background-repeat: no-repeat;
             background-position: right;

@@ -13,11 +13,11 @@ export default {
                 },
                 {
                     sectionName:'SUBSCRIPTON',
-                    sectionImage: 'buy-comics-shop-locator.png'
+                    sectionImage: 'buy-comics-subscriptions.png'
                 },
                 {
                     sectionName:'COMICS SHOP LOCATION',
-                    sectionImage: 'buy-comics-subscriptions.png'
+                    sectionImage: 'buy-comics-shop-locator.png'
                 },
                 {
                     sectionName:'DC POWER VISA ',
@@ -51,16 +51,19 @@ export default {
         display: flex;
         width: 100%;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         li{
             display: flex;
             align-items: center;
             margin: 20px 10px;
             img{
                 height: 50px;
-                margin: 5px 10px;
             }
-
+            &:last-child img{
+            margin: 5px 10px;
+            height: 35px;
+            }
+            
         }
     }
 </style>
