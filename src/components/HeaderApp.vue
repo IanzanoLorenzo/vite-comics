@@ -63,7 +63,7 @@ export default {
         <nav>
             <div class="container">
                 <div class="row">
-                    <img src="/img/dc-logo.png" alt="" />
+                    <img src="../assets/img/dc-logo.png" alt="" />
                     <ul>
                         <li v-for="(link, index) in links" :key="index" :class="link.active ? 'active' : ''"><a :href="link.href">{{link.title}}</a></li>
                     </ul>
@@ -73,7 +73,7 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
-@use '../styles/partials/varables' as *;
+@use '../styles/partials/variables' as *;
 nav{
     width: 100%;
     display: flex;
