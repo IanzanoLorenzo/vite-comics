@@ -65,23 +65,25 @@ export default {
 }
 </script>
 <template lang="">
-    <AppBlueSection />
-    <div class="bottom-menu">
-        <div class="container">
-            <ul v-for="(list, index) in listsBottomMenu" :key="index" class="list-Title"><h3>{{ list.listName }}</h3>
-                <li v-for="(listItem, index) in list.listContent" :key="index"><a href="">{{ listItem }}</a></li>
-            </ul>
-        </div>    
-    </div>
-    <div class="info-footer">
-        <div class="container">
-            <button>SIGN-UP NOW</button>
-            <div class="socials">
-                <h2>FOLLOW US</h2>
-                <img v-for="(social, index) in socials" :key="index" :src="`../src/assets/img/footer-${socials[index]}.png`" alt="pippo">
+    <footer>
+        <AppBlueSection />
+        <div class="bottom-menu">
+            <div class="container">
+                <ul v-for="(list, index) in listsBottomMenu" :key="index" class="list-Title"><h3>{{ list.listName }}</h3>
+                    <li v-for="(listItem, index) in list.listContent" :key="index"><a href="">{{ listItem }}</a></li>
+                </ul>
+            </div>    
+        </div>
+        <div class="info-footer">
+            <div class="container">
+                <button>SIGN-UP NOW</button>
+                <div class="socials">
+                    <h2>FOLLOW US</h2>
+                    <img v-for="(social, index) in socials" :key="index" :src="`../src/assets/img/footer-${socials[index]}.png`" alt="pippo">
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 </template>
 <style lang="scss" scoped>
     @use '../styles/partials/variables' as *;
@@ -136,12 +138,31 @@ export default {
         }
         .socials{
             display: flex;
+            align-items: center;
             flex-direction: row;
-            *{
+            img{
                 margin: 10px;
+                transition: all .2s linear;
+                &:hover{
+                    filter: brightness(2);
+                }
             }
             h2{
                 color: $color-primary;
+            }
+        }
+    }
+    @media screen and (max-width: 992px) {
+
+    }     
+    @media screen and (max-width: 768px) {
+        .container{
+            flex-direction: column;
+        }
+        .bottom-menu{
+            .container{
+                max-height: none ;
+                align-content: center;
             }
         }
     }

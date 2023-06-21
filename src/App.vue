@@ -12,15 +12,9 @@ export default {
 </script>
 <template lang="">
   <div>
-    <header>
       <HeaderApp />
-    </header>
-    <main>
       <MainApp />
-    </main>
-    <footer>
       <FooterApp />
-    </footer>
   </div>
 </template>
 <style lang="scss">

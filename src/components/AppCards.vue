@@ -17,11 +17,28 @@ export default {
         margin: 10px;
         display: flex;
         flex-direction: column;
+        &:hover{
+            cursor: pointer;
+        }
         img{
             width: 100%;
             height: 170px;
             object-fit: cover;
             object-position: top;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .card{
+            width: calc(100% / 4 - 20px);
+        }
+    }
+
+
+
+    @media screen and (max-width: 768px) {
+        .card{
+            width: calc(100% / 3 - 20px);
         }
     }
 </style>

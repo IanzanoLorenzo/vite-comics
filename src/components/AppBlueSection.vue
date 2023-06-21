@@ -32,7 +32,7 @@ export default {
 <template lang="">
     <div class="blue-section">
         <div class="container">
-            <ul class="sections-list">
+            <ul>
                 <li v-for="(section, index) in sections" :key="index">
                     <img class="" :src="`../src/assets/img/${section.sectionImage}`" alt="immagine">
                     <div class=""><a href="">{{ section.sectionName }}</a></div>
@@ -46,9 +46,10 @@ export default {
     .blue-section{
         background-color: $color-primary;
     }
-    .sections-list{
+    ul{
         color: white;
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
         align-items: center;
         justify-content: space-evenly;
@@ -64,6 +65,29 @@ export default {
             height: 35px;
             }
             
+        }
+    }
+    @media screen and (max-width: 992px) {
+        ul{
+            width: fit-content;
+            li{
+                width: calc(100% / 3 - 20px);
+            }
+        }
+        
+    }
+    
+    @media screen and (max-width: 768px) {
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        ul{
+            flex-direction: column;
+            align-items: center;
+            li{
+                width: calc(100% - 20px);
+            }
         }
     }
 </style>
