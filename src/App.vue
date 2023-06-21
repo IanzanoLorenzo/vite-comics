@@ -25,9 +25,4 @@ export default {
 </template>
 <style lang="scss">
   @use './styles/general.scss' as *;
-  .container{
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 </style>

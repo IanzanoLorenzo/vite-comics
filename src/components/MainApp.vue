@@ -4,16 +4,14 @@ export default {
 }
 </script>
 <template lang="">
-    <div>
-        <main>
+        <div class="content">
             <div class="container">
                 <p>--&gt; Content goes here &lt;--</p>
             </div>
-        </main>
-    </div>
+        </div>
 </template>
 <style lang="scss" scoped>
-    main{
+    .content{
         height: 100px;
         background-color: black;
         color: white;
