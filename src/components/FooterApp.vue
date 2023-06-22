@@ -79,7 +79,7 @@ export default {
                 <button>SIGN-UP NOW</button>
                 <div class="socials">
                     <h2>FOLLOW US</h2>
-                    <img v-for="(social, index) in socials" :key="index" :src="`../src/assets/img/footer-${socials[index]}.png`" alt="pippo">
+                    <img v-for="(social, index) in socials" :key="index" :src="`/footer-${socials[index]}.png`" alt="pippo">
                 </div>
             </div>
         </div>

@@ -64,7 +64,7 @@ export default {
             <div class="container">
                 <div class="row">
                     <div class="logo">
-                        <img src="../assets/img/dc-logo.png" alt="" />
+                        <img src="/dc-logo.png" alt="" />
                         <button @click="activeMenu()"><h3>Menu</h3></button>
                     </div>
                     <ul :class="menuShow ? '' : 'hide'">

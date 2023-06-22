@@ -34,7 +34,7 @@ export default {
         <div class="container">
             <ul>
                 <li v-for="(section, index) in sections" :key="index">
-                    <img class="" :src="`../src/assets/img/${section.sectionImage}`" alt="immagine">
+                    <img class="" :src="`/${section.sectionImage}`" alt="immagine">
                     <div class=""><a href="">{{ section.sectionName }}</a></div>
                 </li>
             </ul>
